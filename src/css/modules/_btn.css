@@ -1,0 +1,12 @@
+.btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 21px;
+  background-color: $mainBlue;
+  display: block;
+  height: 58px;
+  width: 280px;
+  margin: 0 auto;
+  line-height: 58px;
+}

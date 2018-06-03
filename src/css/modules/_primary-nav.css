@@ -1,0 +1,27 @@
+.mobile-menu {
+  background-color: $mainBlue;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+    height: 55px;
+    text-align:center;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 55px;
+    font-weight: bold;
+    border-bottom: 1px solid #678fa7;
+  }
+
+  &--hidden {
+    position: absolute;
+    z-index: -999;
+    left: 0;
+    top: 80px;
+  }
+}

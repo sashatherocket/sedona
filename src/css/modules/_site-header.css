@@ -1,0 +1,48 @@
+.site-header {
+  position: relative;
+
+  &__logo {
+    display: block;
+    width: 102px;
+    height: 83px;
+    margin: 0 auto;
+    }
+
+  &__menu-icon {
+    width: 20px;
+    height: 21px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 4px;
+      background-color: $mainBlue;
+    }
+
+    &__middle {
+      position: absolute;
+			top: 8px;
+			left: 0;
+			width: 20px;
+			height: 4px;
+			background-color: $mainBlue;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1px;
+    	left: 0;
+    	width: 20px;
+      height: 4px;
+    	background-color: $mainBlue;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.feature {
+  text-transform: uppercase;
+
+  &__icon {
+    float: left;
+    margin-top: 26px;
+    margin-left: 21px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    float: left;
+    margin-top: 36px;
+    margin-left: 11px;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    margin-left: 68px;
+    clear: both;
+    line-height: 22px;
+    margin-bottom: -10px;
+  }
+}

@@ -1,0 +1,47 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  &__hashtag {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  &__socials {
+    height: 48px;
+    width: 151px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      margin-right: 6px;
+      background-color: $mainBlue;
+      width: 48px;
+      height: 48px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    &__text {
+      margin-right: 11px;
+    }
+  }
+}

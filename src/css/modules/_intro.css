@@ -1,0 +1,21 @@
+.intro {
+  background-image: url(img/bg-back-mobile@1x.jpg);
+  background-position: center;
+  height: 389px;
+  background-size: cover;
+  margin-top: -27px;
+
+  &__image {
+    width: 280px;
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 77px;
+
+  }
+
+  &__triangle {
+    width: 100%;
+    margin-top: 47px;
+  }
+}
