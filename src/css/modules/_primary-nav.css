@@ -45,6 +45,14 @@
         margin-right: 144px;
       }
     }
+
+    @mixin atLarge {
+      width: 230px;
+      
+      &:nth-child(2) {
+        margin-right: 268px;
+      }
+    }
   }
 
   &--hidden {

@@ -21,9 +21,9 @@ var config = {
               options: {
                 plugins: [
                   require('postcss-import')(),
+									require('postcss-mixins')(),
                   require('postcss-nested')(),
                   require('postcss-simple-vars')(),
-                  require('postcss-mixins')(),
 									require('cssnano')({
                     preset: 'default',
                   }),
@@ -55,9 +55,9 @@ module.exports = (env, options) => {
               options: {
                 plugins: [
                   require('postcss-import')(),
+									require('postcss-mixins')(),
                   require('postcss-nested')(),
                   require('postcss-simple-vars')(),
-                  require('postcss-mixins')(),
 									require('cssnano')({
                     preset: 'default',
                   }),

@@ -6,6 +6,10 @@
     width: 102px;
     height: 83px;
     margin: 0 auto;
+
+    @mixin atLarge {
+      width: 188px;
+    }
     }
 
   &__menu-icon {

@@ -50,5 +50,10 @@
         width: 416px;
       }
     }
+
+    @mixin atLarge {
+      width: 539px;
+      font-size: 14px;
+    }
   }
 }
