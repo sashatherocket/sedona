@@ -9,10 +9,27 @@
     line-height: 26px;
     margin-bottom: 28px;
     line-height: 26px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 262px;
 
-    &--large {
-      font-size: 21px;
+    @mixin atMedium {
+      width: 485px;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 49px;
+
+      &--large {
+        font-size: 26px;
+        margin-top: 50px;
+      }
     }
+}
+
+  &--large {
+    font-size: 21px;
   }
 
   &__text {
@@ -20,6 +37,18 @@
 
     &--b-margin {
       margin-bottom: 28px;
+    }
+
+    @mixin atMedium {
+      margin-top: 30px;
+      font-size: 13px;
+      margin-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &--b-margin {
+        width: 416px;
+      }
     }
   }
 }

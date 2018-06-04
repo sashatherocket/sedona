@@ -5,12 +5,24 @@
   margin-top: 40px;
   margin-bottom: 40px;
 
+  @mixin atMedium {
+    height: 79px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+
   &__hashtag {
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
     text-transform: uppercase;
+
+    @mixin atMedium {
+      margin-left: 52px;
+    }
   }
 
   &__socials {
@@ -19,6 +31,11 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+
+    @mixin atMedium {
+      margin-left: 52px;
+      margin-top: -15px;
+    }
 
     &__item {
       display: flex;
@@ -39,6 +56,10 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+
+    @mixin atMedium {
+      margin-top: -15px;
+    }
 
     &__text {
       margin-right: 11px;

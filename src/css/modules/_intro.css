@@ -5,6 +5,11 @@
   background-size: cover;
   margin-top: -27px;
 
+  @mixin atMedium {
+    background-image: url(img/bg-back-tablet@1x.jpg);
+    height: 518px;
+  }
+
   &__image {
     width: 280px;
     height: 240px;
@@ -12,10 +17,19 @@
     margin: 0 auto;
     padding-top: 77px;
 
+    @mixin atMedium {
+      width: 461px;
+      height: 350px;
+    }
+
   }
 
   &__triangle {
     width: 100%;
     margin-top: 47px;
+
+    @mixin atMedium {
+      margin-top: 35px;
+    }
   }
 }

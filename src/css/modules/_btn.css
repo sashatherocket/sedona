@@ -9,4 +9,9 @@
   width: 280px;
   margin: 0 auto;
   line-height: 58px;
+
+  @mixin atMedium {
+    height: 58px;
+    width: 458px;
+  }
 }

@@ -1,5 +1,12 @@
-.mobile-menu {
+.primary-nav {
   background-color: $mainBlue;
+  height: 223px;
+  transition: all .2s;
+
+  @mixin atMedium {
+    background-color: inherit;
+    height: 0;
+  }
 
   &__list {
     margin: 0;
@@ -8,7 +15,6 @@
 
   &__item {
     list-style: none;
-    height: 55px;
     text-align:center;
     font-size: 16px;
     text-transform: uppercase;
@@ -16,12 +22,37 @@
     line-height: 55px;
     font-weight: bold;
     border-bottom: 1px solid #678fa7;
+
+    &__link {
+      text-decoration: none;
+      height: 56px;
+      color: white;
+
+      @mixin atMedium {
+        color: black;
+      }
+    }
+
+    @mixin atMedium {
+      border-bottom: none;
+      color: black;
+      display: inline-block;
+      width: 153px;
+      color: black;
+
+
+      &:nth-child(2) {
+        margin-right: 144px;
+      }
+    }
   }
 
   &--hidden {
-    position: absolute;
-    z-index: -999;
-    left: 0;
-    top: 80px;
+    height: 0px;
+    opacity: 0;
+
+    & > ul > li {
+      border-bottom: none;
+    }
   }
 }
