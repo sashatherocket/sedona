@@ -71,8 +71,10 @@
       margin-left: auto;
     }
 
-    &__image {
-      margin-right: 51px;
+    @mixin atLarge {
+      &__image {
+        margin-right: 51px;
+      }
     }
   }
 }
