@@ -37,6 +37,11 @@
       margin-top: -15px;
     }
 
+    @mixin atLarge {
+      margin-left: auto;
+      width: auto;
+    }
+
     &__item {
       display: flex;
       justify-content: center;
