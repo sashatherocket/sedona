@@ -68,6 +68,11 @@
 
     &__text {
       margin-right: 11px;
+      margin-left: auto;
+    }
+
+    &__image {
+      margin-right: 51px;
     }
   }
 }
