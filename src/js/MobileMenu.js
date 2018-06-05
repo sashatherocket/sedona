@@ -1,7 +1,5 @@
 import $ from "jquery";
 
-
-
 class MobileMenu {
   constructor() {
     this.menuContent = $(".primary-nav");
@@ -11,7 +9,7 @@ class MobileMenu {
 
   events() {
     this.menuIcon.click(this.toggleTheMenu.bind(this));
-    if($(window).width() >= 700) this.menuContent.toggleClass("primary-nav--hidden");
+    if($(window).width() >= 700) {this.menuContent.toggleClass("primary-nav--hidden");}
 
   }
 
